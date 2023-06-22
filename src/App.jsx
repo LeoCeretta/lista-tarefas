@@ -91,13 +91,13 @@ function App() {
   return (
       <div className="App">
         <div className="todo_header">
-          <h1>React TO DO</h1>
+          <h1>React TO DO List</h1>
         </div>
         <div className="form_todo">
           <h2>Insira a sua próxima tarefa:</h2>
           <form onSubmit={handleSubmit}>
             <div className="form_control">
-              <label htmlFor="title">O que você vai fazer?</label>
+              <label htmlFor="title">O que você irá fazer?</label>
               <input 
                 type="text" 
                 name="title" 
@@ -112,7 +112,7 @@ function App() {
               <input 
                 type="text" 
                 name="time" 
-                placeholder="Tempo estimado (em horas)" 
+                placeholder="Tempo estimado para concluir a tarefa (em horas)" 
                 onChange={(e) => setTime(e.target.value)} 
                 value={time || ""}
                 required
